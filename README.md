@@ -1,8 +1,8 @@
 # starwars
-Shell Fun starwars API Docker
+<h2>Shell Fun starwars API Docker</h2>
 
-$git clone https://github.com/geekzoo/starwars.git
-$docker build -t starwars .
-$docker run starwars
-
+$git clone https://github.com/geekzoo/starwars.git <br>
+$docker build -t starwars . <br>
+$docker run starwars <br>
+<br>
 Enjoy! 
