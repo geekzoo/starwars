@@ -1,5 +1,8 @@
-FROM alpine:latest
-RUN apk add --no-cache curl jq bash grep pv gzip gawk
+#FROM alpine:latest
+FROM ubuntu:18.04
+#RUN apk add --no-cache curl jq bash grep pv gzip gawk
+RUN apt-get update
+RUN apt -y install curl jq bash grep pv gzip gawk
 COPY star_Wars.sh /
 #COPY scrap.sh /
 COPY data.sh /
