@@ -15,7 +15,7 @@ URL="https://swapi.co/api/starships/" #ENTRY URL
 NEXT=$(curl -s $URL |jq -r -c .next) #NEXT URL
 . data.sh
 
-echo -e "\n\n\n\n\e[1;34m\t[ $(echo $cont | base64 -d | zcat) ] \a\n\n\t[ STARWARS STATIC API ] \n\n\t[ The playback has been slowed down for your veiwing enjoyment! ]\e[0m" | pv -L10 2>/dev/null
+echo -e "\n\n\n\n\e[1;34m\t[ $(echo $cont | base64 -d | zcat) ] \a\n\n\t[ STARWARS STATIC API ] \n\n\t[ The playback has been slowed down for your viewing enjoyment! ]\e[0m" | pv -L10 2>/dev/null
 ## LOGO for added cinematic output
 echo -e "\e[2m" #SET TEXT COLOR
 echo $logo | base64 -d | zcat |pv -L800 2>/dev/null #READ LOGO at bytes/s
