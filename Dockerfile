@@ -1,5 +1,5 @@
 #FROM alpine:latest
-FROM ubuntu:18.04
+FROM ubuntu:19.04
 #RUN apk add --no-cache curl jq bash grep pv gzip gawk
 RUN apt-get update
 RUN apt -y install curl jq bash grep pv gzip gawk
